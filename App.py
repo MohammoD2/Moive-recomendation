@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 import requests
-import joblib
+
 
 st.title('Welcome To Ibrahim Creation ')
 st.header('Creator- Mohammod Ibrahim Hossain ')
@@ -28,12 +28,12 @@ def recommendation(movie):
 
 st.title("Movie Recommendation System")
 
-model_path = r"/mount/src/moive-recomendation/App.py"
+model_path = r"/mount/src/moive-recomendation/movie_dict1.pkl2"
 
 with open(model_path, 'rb') as model_file:
     movies_dict = pickle.load(model_file)
 moives = pd.DataFrame(movies_dict)
-similarity_path = r"E:\Work files\Movie Recommender System2\moive_R\similarity.pkl2"
+similarity_path = r"/mount/src/moive-recomendation/similarity.pkl2"
 
 with open(similarity_path, 'rb') as similarity_file:
     similarity = pickle.load(similarity_file)
