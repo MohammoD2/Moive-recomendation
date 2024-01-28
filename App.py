@@ -28,7 +28,7 @@ def recommendation(movie):
 
 st.title("Movie Recommendation System")
 
-model_path = r"E:\Work files\Movie Recommender System2\moive_R\movie_dict1.pkl2"
+model_path = r"/mount/src/moive-recomendation/App.py"
 
 with open(model_path, 'rb') as model_file:
     movies_dict = pickle.load(model_file)
