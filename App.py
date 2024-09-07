@@ -3,7 +3,12 @@ import pandas as pd
 import pickle
 import requests
 
-
+st.set_page_config(
+    page_title="Movie Recommendation System",
+    page_icon="🎥",
+    layout="centered",
+    initial_sidebar_state="expanded"
+)
 st.title('Welcome To Ibrahim Creation ')
 st.header('Creator- Mohammod Ibrahim Hossain ')
 st.image('My profressional photos.jpg',caption="Creator")
